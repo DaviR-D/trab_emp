@@ -3,32 +3,32 @@
     <h1>Ferramentas para Controle do Tempo Digital</h1>
     <div class="grid-container">
       <a href="https://www.apple.com/screen-time/" target="_blank" class="grid-item">
-        <span>Screen Time</span>
+        <span>⏰ Screen Time</span>
       </a>
       <a href="https://www.forestapp.cc/" target="_blank" class="grid-item">
-        <span>Forest</span>
+        <span>🌳 Forest</span>
       </a>
       <a href="https://www.focusatwill.com/" target="_blank" class="grid-item">
-        <span>Focus@Will</span>
+        <span>🎧 Focus@Will</span>
       </a>
       <a href="https://www.rescuetime.com/" target="_blank" class="grid-item">
-        <span>RescueTime</span>
+        <span>📅 RescueTime</span>
       </a>
       <a
         href="https://chrome.google.com/webstore/detail/stayfocusd/laankejkbhbdhmipfmgcngdelahlfoji"
         target="_blank"
         class="grid-item"
       >
-        <span>StayFocusd</span>
+        <span>🚫 StayFocusd</span>
       </a>
       <a href="https://www.proginosko.com/leechblock/" target="_blank" class="grid-item">
-        <span>LeechBlock</span>
+        <span>⏳ LeechBlock</span>
       </a>
       <a href="https://habitica.com/" target="_blank" class="grid-item">
-        <span>Habitica</span>
+        <span>🏋️ Habitica</span>
       </a>
       <a href="https://toggl.com/track/" target="_blank" class="grid-item">
-        <span>Toggl Track</span>
+        <span>📊 Toggl Track</span>
       </a>
     </div>
   </div>
@@ -36,28 +36,33 @@
 
 <script>
 export default {
-  name: 'ToolGrid',
-}
+  name: "ToolGrid",
+};
 </script>
 
 <style scoped>
 .tool-grid {
-  max-width: 800px;
+  max-width: 900px;
   margin: auto;
   padding: 20px;
-  font-family: Arial, sans-serif;
-  color: #fff;
-  text-align: center;
+  border-radius: 15px;
+  background: #f0f4f8;
+  color: #333;
+  font-family: "Arial", sans-serif;
+  line-height: 1.8;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
-  font-size: 2em;
-  margin-bottom: 20px;
+  font-size: 2.2em;
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 30px;
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 20px;
 }
 
@@ -66,25 +71,42 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #333;
+  background: #e9ecef;
+  text-decoration: none;
+  color: #333;
   padding: 20px;
   border-radius: 10px;
-  text-decoration: none;
-  color: #fff;
-  transition: transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background 0.3s ease;
 }
 
 .grid-item:hover {
   transform: scale(1.05);
-  background-color: #444;
-}
-
-.grid-item i {
-  font-size: 2.5em;
-  margin-bottom: 10px;
+  background: #dbe2e8;
 }
 
 .grid-item span {
-  font-size: 1.1em;
+  font-size: 1.2em;
+  font-weight: 600;
+  text-align: center;
+  color: #0056b3;
 }
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+
+  .grid-item {
+    padding: 15px;
+  }
+
+  .grid-item span {
+    font-size: 1em;
+  }
+}
+
+
 </style>
+
+

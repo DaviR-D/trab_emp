@@ -80,51 +80,85 @@
 
 <script>
 export default {
-  name: 'TimeControl',
-}
+  name: "TimeControl",
+};
 </script>
 
 <style scoped>
 .time-control {
-  max-width: 800px;
+  max-width: 900px;
   margin: auto;
   padding: 20px;
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #fff;
+  border-radius: 15px;
+  background: #f0f4f8;
+  color: #333;
+  font-family: "Arial", sans-serif;
+  line-height: 1.8;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
-  font-size: 2em;
-  margin-bottom: 20px;
+  font-size: 2.2em;
   text-align: center;
-  color: #fff;
+  color: #007bff;
+  margin-bottom: 30px;
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 1.6em;
+  color: #0056b3;
   margin-top: 20px;
-  color: #fff;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
 }
 
 p {
   font-size: 1.1em;
-  color: #fff;
   margin-bottom: 15px;
 }
 
 ul,
 ol {
+  margin: 20px 0;
   padding-left: 20px;
-  margin-bottom: 20px;
 }
 
 ul li,
 ol li {
   margin-bottom: 10px;
+  line-height: 1.6;
 }
 
 strong {
-  color: #fff;
+  color: #0056b3;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+i {
+  color: #007bff;
+}
+
+@media (max-width: 768px) {
+  .time-control {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+
+  p,
+  ul li,
+  ol li {
+    font-size: 1em;
+  }
 }
 </style>

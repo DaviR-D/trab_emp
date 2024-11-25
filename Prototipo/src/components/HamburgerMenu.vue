@@ -33,28 +33,60 @@ export default {
   cursor: pointer;
   background: none;
   border: none;
-  color: white;
+  color: #007bff;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background 0.3s ease, color 0.3s ease;
 }
+
+
 
 .menu {
   position: fixed;
   top: 0;
   left: 0;
-  width: 200px;
+  width: 250px;
   height: 100%;
-  background-color: #333;
+  background-color: #f0f4f8;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 1000;
 }
 
 .menu-item {
   display: block;
-  padding: 10px;
-  color: white;
+  font-size: 1.2em;
+  padding: 10px 15px;
+  color: #333;
   text-decoration: none;
-  font-size: 18px;
+  border-radius: 8px;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .menu-item:hover {
-  background-color: #444;
+  background-color: #e9ecef;
+  color: #0056b3;
 }
+
+@media (max-width: 768px) {
+  .hamburger-button {
+    top: 15px;
+    left: 15px;
+    font-size: 20px;
+  }
+
+  .menu {
+    width: 200px;
+    padding: 15px;
+  }
+
+  .menu-item {
+    font-size: 1em;
+    padding: 8px 12px;
+  }
+}
+
 </style>
